@@ -3,7 +3,7 @@ export default class SignUp extends Component {
     render() {
         return (
             <form>
-                <h3>Sign Up</h3>
+                <h1>Sign Up</h1>
                 <div className="form-group">
                     <label>First name</label>
                     <input type="text" className="form-control" />

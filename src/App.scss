@@ -4,13 +4,13 @@
 // Variables
 $roboto: 'Roboto', sans-serif;
 $bg-color: #ededed;
-$form-width: 500px;
+$form-width: 400px;
 $green-brand: #06874e;
 $white-brand: #fff;
 $form-bg: #fff;
 $normal_pad: 10px 20px;
 $form_field_Width: 250px;
-
+$danger-color: #dc3545;
 // Styles
 body {
   font-family: $roboto;
@@ -79,6 +79,12 @@ button.btn.btn-primary.btn-block:hover {
 }
 a {
   color: #000 !important;
+  font-weight:700;
+}
+.danger-text {
+  color: $danger-color;
+  font-size: 80%;
+  margin-top:5px;
   font-weight:700;
 }
 
