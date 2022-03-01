@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+// Variables
+$roboto: 'Roboto', sans-serif;
+$bg-color: #ededed;
+$form-width: 500px;
+$green-brand: #06874e;
+$white-brand: #fff;
+$form-bg: #fff;
+$normal_pad: 10px 20px;
+$form_field_Width: 250px;
+
+// Styles
+body {
+  font-family: $roboto;
+  font-weight: 300;
+  text-align:center;
+  background-color: $bg-color;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+h3 {
+  font-size: 140%;
+}
+form {
+  max-width: $form-width;
+  border-top:1px solid $green-brand;
+  display: block;
+  margin:auto;
+  background-color: $form-bg;
+  margin-top:40px;
+  padding: $normal_pad;
+  width: 100%;
+}
+.form-group {
+  padding: $normal_pad;
+  max-width: $form_field_Width;
+  width: 100%;
+  display:inline-block;
+}
+.form-group label {
+  text-align:left;
+  width:100%;
+  display: inline-block;
+  font-weight: 400;
+}
+.form-group input {
+  width: 100%;
+  padding: 8px 0px;
+  border: 1px solid #ced4da;
+  float: left;
+}
+.form-group input[type="checkbox"] {
+   width:auto;
+   float:left;
+}
+label.custom-control-label {
+  width: auto;
+  text-align:left;
+  float:left;
+}
+button.btn.btn-primary.btn-block {
+  width: 100%;
+  display: block;
+  margin: auto;
+  color: $white-brand;
+  padding:  $normal_pad;
+  background-color: $green-brand;
+  border:1px solid $green-brand;
+  font-weight: 700;
+  font-size: 100%;
+  cursor: pointer;
+}
+button.btn.btn-primary.btn-block:hover {
+  color: $green-brand;
+  background-color: $white-brand;
+}
+a {
+  color: #000 !important;
+  font-weight:700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

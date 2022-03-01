@@ -5,12 +5,12 @@ export default class Login extends Component {
             <form>
                 <h3>Sign In</h3>
                 <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <label>Email</label>
+                    <input type="email" className="form-control"  />
                 </div>
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password" className="form-control"  />
                 </div>
                 <div className="form-group">
                     <div className="custom-control custom-checkbox">
@@ -18,12 +18,14 @@ export default class Login extends Component {
                         <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                <div className="form-group">
+                <button type="submit" className="btn btn-primary btn-block">Sign in</button>
+                </div>
                 <p className="forgot-password text-center">
                     <a href="#">Forgot your password?</a>
                 </p>
                 <p className="signup-account text-center">
-                    Don't have an account?<a href="/sign-up">Sign up</a>
+                    Don't have an account? <a href="/sign-up">Sign up</a>
                 </p>
                 <p className="resend-email text-center">
                     <a href="#">Resend email confirmation</a>
